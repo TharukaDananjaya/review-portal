@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ...other Tailwind styles */
+
+:root{
+    --background-color: #C8C8C8;
+    --background-color-light:#F1F1F1;
+    --accent-color: #ffa362;
+    --accent-color-light:#ff9244; 
+
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.backgound-gray-custom{
+    background-color: var(--background-color);
+}
+.background-accent-custom{
+    background-color: var(--accent-color)
+}
+.background-accent-light-custom{
+    background-color: var(--accent-color-light)
+}
+.color-light-custom{
+   color: var(--accent-color-light)
+}
+.active{
+    background-color: var(--accent-color-light);
+    color: white;
+}
