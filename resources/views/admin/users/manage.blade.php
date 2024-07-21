@@ -44,8 +44,8 @@
     <div class="mt-5">
 
         <div class="text-end mb-5">
-            <a href="{{route('admin.users.add')}}"
-                class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+            <a href="{{ route('admin.users.add') }}"
+                class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                 <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
@@ -60,7 +60,7 @@
                     <tr>
                         {{-- <th scope="col" class="p-4">
                     <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="checkbox-all-search" class="sr-only">checkbox</label>
                     </div>
                 </th> --}}
@@ -69,12 +69,6 @@
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Email
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Mobile Number
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Verified
                         </th>
                         <th scope="col" class="px-6 py-3">
                             Type
@@ -96,7 +90,7 @@
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             {{-- <td class="w-4 p-4">
                     <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                     </div>
                 </td> --}}
@@ -107,18 +101,7 @@
                             <td class="px-6 py-4">
                                 {{ $item->email }}
                             </td>
-                            <td class="px-6 py-4">
-                                {{ $item->mobile_number }}
-                            </td>
-                            <td class="px-6 py-4">
-                                @if ($item->number_verified_at != null)
-                                    <span
-                                        class="inline-flex items-center rounded-md  px-2 py-1 text-xs font-medium text-green-700 dark:text-green-800 ring-1 ring-inset ring-green-800">True</span>
-                                @else
-                                    <span
-                                        class="inline-flex items-center rounded-md px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500">False</span>
-                                @endif
-                            </td>
+
                             <td class="px-6 py-4">
                                 @if ($item->type == 1)
                                     <span
@@ -145,9 +128,9 @@
                                 {{ date('Y-m-d H:i', strtotime($item->created_at)) }}
                             </td>
                             <td class="flex items-center px-6 py-4">
-                                <a href="{{route('admin.users.edit', ['id'=> $item->id])}}"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline mr-3">Edit</a>
-                                    {{-- <a href="{{route('admin.users.invite', ['id' =>$item->id])}}"
+                                <a href="{{ route('admin.users.edit', ['id' => $item->id]) }}"
+                                    class="font-medium text-blue-600 dark:text-blue-400 hover:underline mr-3">Edit</a>
+                                {{-- <a href="{{route('admin.users.invite', ['id' =>$item->id])}}"
                                     class="font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Invite</a> --}}
                                 <a href="#" id="{{ route('admin.users.delete', ['id' => $item->id]) }}"
                                     class="font-medium open-delete-modal text-red-600 dark:text-red-500 hover:underline ms-3">Remove</a>
@@ -158,8 +141,8 @@
             </table>
             <div class="p-2 mt-4">
                 @if (!empty($data))
-                {{ $data->links() }}
-            @endif
+                    {{ $data->links() }}
+                @endif
             </div>
         </div>
     </div>

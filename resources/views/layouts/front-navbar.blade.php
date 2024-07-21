@@ -43,7 +43,7 @@
 
                 </button>
                 @if (auth()->user() != null)
-                    <a class="inline-flex items-center text-white background-accent-light-custom hover:bg-orange-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3 me-2 mb-2.5 mt-2"
+                    <a class="inline-flex items-center text-white background-accent-light-custom hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3 me-2 mb-2.5 mt-2"
                         href="{{ route('dashboard') }}"><span class="md:hidden">Dashboard</span><span
                             class="hidden md:inline">Dashboard</span><svg class="hidden w-3 h-3 ml-2 xl:inline"
                             aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -51,7 +51,7 @@
                                 d="M1 5h12m0 0L9 1m4 4L9 9"></path>
                         </svg></a>
                 @else
-                    <a class="inline-flex items-center text-white background-accent-light-custom hover:bg-orange-500 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3 me-2 mb-2.5 mt-2"
+                    <a class="inline-flex items-center text-white background-accent-light-custom hover:bg-blue-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ml-1 md:ml-3 me-2 mb-2.5 mt-2"
                         href="/login/"><span class="md:hidden">Login</span><span class="hidden md:inline">Sign
                             in</span><svg class="hidden w-3 h-3 ml-2 xl:inline" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

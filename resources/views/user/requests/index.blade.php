@@ -45,7 +45,7 @@
 
         <div class="text-end mb-5">
             <button id="make-new-request"
-                class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                 <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
@@ -60,7 +60,7 @@
                     <tr>
                         {{-- <th scope="col" class="p-4">
                     <div class="flex items-center">
-                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="checkbox-all-search" class="sr-only">checkbox</label>
                     </div>
                 </th> --}}
@@ -93,7 +93,7 @@
                             class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                             {{-- <td class="w-4 p-4">
                     <div class="flex items-center">
-                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
                     </div>
                 </td> --}}
@@ -146,7 +146,7 @@
                             </td>
                             {{-- <td class="flex items-center px-6 py-4">
                                 <a href="{{ route('admin.users.edit', ['id' => $item->id]) }}"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline mr-3">Edit</a>
+                                    class="font-medium text-blue-600 dark:text-blue-400 hover:underline mr-3">Edit</a>
                                 <a href="{{route('admin.users.invite', ['id' =>$item->id])}}"
                                     class="font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Invite</a>
                                 <a href="#" id="{{ route('admin.users.delete', ['id' => $item->id]) }}"
@@ -184,7 +184,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Request Type <span
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <select id="request_type" name="request_type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('request_type') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('request_type') border-red-500 @enderror">
                                     <option selected>Choose a option</option>
                                     <option value="call_back">Request to Call Back</option>
                                     <option value="meet">Request to Meet</option>
@@ -197,18 +197,18 @@
                                         class="text-sm"><strong>(optional)</strong></span></label>
                                 <input type="file" id="file" name="file" value="{{ old('file') }}"
                                     placeholder="John"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('file') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('file') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                 <label for="note"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Note
                                     <span class="text-sm"><strong>(optional)</strong></span></label>
                                 <textarea rows="5" id="note" name="note" value="{{ old('note') }}" placeholder="Note"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('note') border-red-500 @enderror"> </textarea>
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('note') border-red-500 @enderror"> </textarea>
                             </div>
                             <div class="flex items-end justify-end">
                                 <button type="submit"
-                                    class="background-accent-light-custom hover:bg-orange-500 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Save</button>
+                                    class="background-accent-light-custom hover:bg-blue-400 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Save</button>
                             </div>
                         </form>
                     </div>

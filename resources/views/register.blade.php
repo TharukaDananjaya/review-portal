@@ -16,41 +16,41 @@
                     <div class="mb-4">
                         <label for="name" class="block text-sm dark:text-white text-gray-500 mb-2">Name <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="text" id="name" name="name" value="{{ old('name') }}" required autofocus
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('name') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('name') border-red-500 @enderror">
                     </div>
                     <div class="mb-4">
                         <label for="nid" class="block text-sm dark:text-white text-gray-500 mb-2">NID <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="text" id="nid" name="nid" value="{{ old('nid') }}" required
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('nid') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('nid') border-red-500 @enderror">
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-sm dark:text-white text-gray-500 mb-2">Email <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="email" id="email" name="email" value="{{ old('email') }}"
                             required autocomplete="off"
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('email') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('email') border-red-500 @enderror">
                     </div>
                     <div class="mb-4">
                         <label for="mobile_number" class="block text-sm dark:text-white text-gray-500 mb-2">Mobile Number <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="text" id="mobile_number" name="mobile_number" value="{{ old('mobile_number') }}"
                             required autocomplete="off" placeholder="9601234567"
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('mobile_number') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('mobile_number') border-red-500 @enderror">
                     </div>
                     <div class="mb-4">
                         <label for="password" class="block text-sm dark:text-white text-gray-500 mb-2">Password <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="password" id="password" name="password" required
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('password') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('password') border-red-500 @enderror">
                     </div>
                     <div class="mb-4">
                         <label for="confirm_password" class="block text-sm dark:text-white text-gray-500 mb-2">Confirm Password <span class="text-red-500"><strong>*</strong></span></label>
                         <input type="password" id="password_confirmation" name="password_confirmation" required
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-500 @error('password_confirmation') border-red-500 @enderror">
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 dark:text-white text-gray-500 focus:border-blue-400 @error('password_confirmation') border-red-500 @enderror">
                     </div>
 
 
 
                     <div class="flex items-end justify-end">
                         <button type="submit"
-                            class="background-accent-light-custom hover:bg-orange-500 w-full h-10 text-sm dark:text-white text-gray-500 py-2 px-4 rounded-lg focus:outline-none">Sign
+                            class="background-accent-light-custom hover:bg-blue-400 w-full h-10 text-sm dark:text-white text-gray-500 py-2 px-4 rounded-lg focus:outline-none">Sign
                             up</button>
                     </div>
                 </form>

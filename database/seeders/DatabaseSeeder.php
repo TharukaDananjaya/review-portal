@@ -20,7 +20,6 @@ class DatabaseSeeder extends Seeder
         User::create([
             "name" => "Super Admin",
             "email" => "superadmin@gmail.com",
-            "mobile_number" => "123456789",
             "password" => Hash::make('123456'),
             "type" => 1,
             "status" => 1

@@ -46,11 +46,6 @@ class AuthContoller extends Controller
 
             if ($this->authSrvice->authenticate($request, $credentials, $remember)) {
 
-                // $user = $this->userService->getByNid($request->nid);
-                // if ($user['number_verified_at'] == null) {e
-                //     Auth::logout();
-                //     return redirect()->route('mobile.verify.index', ['nid' => $request->nid]);
-                // }
                 return redirect()->intended('dashboard')->with($this->resources);
             }
             return back()->withErrors([

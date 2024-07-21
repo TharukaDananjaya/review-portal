@@ -57,7 +57,7 @@
                     <a href="#"
                         class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600"
                         role="menuitem" tabindex="-1" id="user-menu-item-0">{{ auth()->user()->name }}</a>
-                    <a href="{{ route('profile') }}"
+                    <a href="@if (auth()->user()->type == 1) {{ route('admin.profile') }} @else {{ route('user.profile') }} @endif"
                         class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-slate-100 dark:hover:bg-gray-600"
                         role="menuitem" tabindex="-1" id="user-menu-item-1">Your Profile</a>
                     <a href="#" id="open-logout-modal"
@@ -84,7 +84,7 @@
                 <!-- Buttons -->
                 <div class="flex justify-center">
                     <a href="{{ route('singout') }}"
-                        class="bg-blue-500 text-white text-sm hover:bg-blue-600 px-5 py-1.5 rounded-md mr-2"
+                        class="bg-blue-400 text-white text-sm hover:bg-blue-600 px-5 py-1.5 rounded-md mr-2"
                         id="confirm-btn">Confirm</a>
                     <button class="bg-gray-300 text-gray-700 text-sm hover:bg-gray-400 px-5 py-1.5 rounded-md ml-2"
                         id="cancel-btn">Cancel</button>

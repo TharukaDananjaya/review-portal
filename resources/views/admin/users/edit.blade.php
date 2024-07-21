@@ -59,7 +59,7 @@
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="text" id="name" name="name" value="{{ $data['name'] }}" required
                                     autofocus
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                 <label for="mobile_number"
@@ -67,7 +67,7 @@
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="text" id="mobile_number" name="mobile_number"
                                     value="{{ $data['mobile_number'] }}" required autofocus
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('mobile_number') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('mobile_number') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                 <label for="email"
@@ -75,14 +75,14 @@
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="email" id="email" name="email" value="{{ $data['email'] }}" required
                                     autofocus
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('email') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('email') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                 <label for="type"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option
                                     <span class="text-red-500"><strong>*</strong></span></label>
                                 <select id="type" name="type"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('type') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('type') border-red-500 @enderror">
                                     <option selected>Choose a type</option>
                                     <option value="3" @if ($data['type'] == 3) selected @endif>User</option>
                                     <option value="1" @if ($data['type'] == 1) selected @endif>Admin</option>
@@ -97,7 +97,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option
                                     <span class="text-red-500"><strong>*</strong></span></label>
                                 <select id="status" name="status"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('status') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('status') border-red-500 @enderror">
                                     <option selected>Choose a status</option>
                                     <option value="1" @if ($data['status'] == 1) selected @endif>Active
                                     </option>
@@ -111,14 +111,14 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password <span
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="password" id="password" name="password"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('password') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('password') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                 <label for="confirm_password"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Confirm Password
                                     <span class="text-red-500"><strong>*</strong></span></label>
                                 <input type="password" id="password_confirmation" name="password_confirmation"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('password_confirmation') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('password_confirmation') border-red-500 @enderror">
                             </div>
                             {{-- <div class="flex items-center">
                                 <input name="invite_via_email" type="checkbox" id="checkbox"
@@ -130,7 +130,7 @@
 
                     <div class="flex items-end justify-end">
                         <button type="submit"
-                            class="background-accent-light-custom hover:bg-orange-500 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Save</button>
+                            class="background-accent-light-custom hover:bg-blue-400 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Save</button>
                     </div>
                 </form>
             </div>

@@ -33,7 +33,6 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => ['required'],
-            'mobile_number' => ['required','unique:users'],
             'type' => ['required'],
             'status' => ['required'],
             'email' => ['required', 'email', 'unique:users'],
@@ -43,7 +42,6 @@ class UserController extends Controller
         try {
             $this->userService->store([
                 'name' => $request->name,
-                'mobile_number' => $request->mobile_number,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
                 'type' => $request->type,
@@ -71,7 +69,6 @@ class UserController extends Controller
         $request->validate([
             'id' => ['required'],
             'name' => ['required'],
-            'mobile_number' => ['required', Rule::unique('users')->ignore($request->id)],
             'type' => ['required'],
             'status' => ['required'],
             'email' => ['required', 'email', Rule::unique('users')->ignore($request->id)],
@@ -89,7 +86,6 @@ class UserController extends Controller
         try {
             $this->userService->update([
                 'name' => $request->name,
-                'mobile_number' => $request->mobile_number,
                 'email' => $request->email,
                 'type' => $request->type,
                 'status' => $request->status

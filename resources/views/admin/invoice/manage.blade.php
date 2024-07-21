@@ -54,7 +54,7 @@
                 </div>
                 <div id="print-button" style="display: none">
                     <button id="print" type="button"
-                        class="inline-flex items-center px-5 py-1.5 bg-success-700 border border-transparent rounded-md text-sm font-semibold text-white hover:bg-success-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        class="inline-flex items-center px-5 py-1.5 bg-success-700 border border-transparent rounded-md text-sm font-semibold text-white hover:bg-success-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-5 h-5 mr-1">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -65,12 +65,12 @@
                 <div class="flex ms-2">
                     <div class="flex items-center me-2">
                         <input type="radio" id="pdf" name="print_type" value="pdf" checked
-                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="pdf" class="ms-1 font-semibold dark:text-white text-gray-700">PDF</label>
                     </div>
                     <div class="flex items-center">
                         <input type="radio" id="png" name="print_type" value="png"
-                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                         <label for="png" class="ms-1  font-semibold dark:text-white text-gray-700">PNG</label>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                                 </svg>
                             </div>
                             <input type="search" id="default-search"
-                                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-400 focus:border-blue-400 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400"
                                 placeholder="Search Customer Name..." name="search" required />
                             <button type="submit"
                                 class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
@@ -101,7 +101,7 @@
             </div>
             <div>
                 <a href="{{ route('admin.invoice.add') }}"
-                    class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    class="inline-flex items-center px-5 py-1.5 background-accent-light-custom border border-transparent rounded-md text-sm font-semibold text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
                     <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -126,7 +126,7 @@
                         <th scope="col" class="p-4">
                             <div class="flex items-center">
                                 <input id="select-all" type="checkbox"
-                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                                 <label for="select-all" class="sr-only">checkbox</label>
                             </div>
                         </th>
@@ -157,7 +157,7 @@
                             <td class="w-4 p-4">
                                 <div class="flex items-center">
                                     <input type="checkbox"
-                                        class="select-check w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                                        class="select-check w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-400 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                                         value="{{ $item['id'] }}">
                                     <label class="sr-only">checkbox</label>
                                 </div>
@@ -180,7 +180,7 @@
                             </td>
                             <td class="flex items-center px-6 py-4">
                                 <a href="{{ route('admin.invoice.edit', ['id' => $item->id]) }}"
-                                    class="font-medium text-blue-600 dark:text-blue-500 hover:underline mr-3">Edit</a>
+                                    class="font-medium text-blue-600 dark:text-blue-400 hover:underline mr-3">Edit</a>
                                 {{-- <a href="{{route('admin.invoice.invite', ['id' =>$item->id])}}"
                                     class="font-medium text-yellow-600 dark:text-yellow-500 hover:underline">Invite</a> --}}
                                 <a href="#" id="{{ route('admin.invoice.delete', ['id' => $item->id]) }}"

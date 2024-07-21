@@ -51,14 +51,14 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Describe your
                                     idea<span class="text-red-500"><strong>*</strong></span></label>
                                 <textarea rows="5" id="description" name="description" required
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('description') border-red-500 @enderror">{{ old('description') }}</textarea>
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('description') border-red-500 @enderror">{{ old('description') }}</textarea>
                             </div>
 
                         </div>
                     </div>
                     <div class="flex items-end justify-end">
                         <button type="submit"
-                            class="background-accent-light-custom hover:bg-orange-500 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Submit</button>
+                            class="background-accent-light-custom hover:bg-blue-400 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Submit</button>
                     </div>
                 </form>
             </div>

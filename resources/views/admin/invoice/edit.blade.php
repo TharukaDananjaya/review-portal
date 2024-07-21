@@ -59,7 +59,7 @@
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="text" id="customer_name" name="customer_name"
                                     value="{{ $data['customer_name'] }}" required autofocus
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('customer_name') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('customer_name') border-red-500 @enderror">
                             </div>
                         </div>
                         <div>
@@ -69,7 +69,7 @@
                                         class="text-red-500"><strong>*</strong></span></label>
                                 <input type="date" id="date" name="date" value="{{ $data['date'] }}" required
                                     autofocus
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('date') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('date') border-red-500 @enderror">
                             </div>
                         </div>
                         <div>
@@ -78,7 +78,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product condition
                                     <span class="text-red-500"><strong>*</strong></span></label>
                                 <select id="product_condition" name="product_condition"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('product_condition') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('product_condition') border-red-500 @enderror">
                                     <option selected>Choose a status</option>
                                     <option value="NEUF" @if ($data['product_condition'] == 'NEUF') selected @endif>NEUF</option>
                                     <option value="VRAC" @if ($data['product_condition'] == 'VRAC') selected @endif>VRAC</option>
@@ -96,7 +96,7 @@
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select currency <span
                                     class="text-red-500"><strong>*</strong></span></label>
                             <select id="currency" name="currency"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('currency') border-red-500 @enderror">
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('currency') border-red-500 @enderror">
                                 <option value="USD" selected>United States Dollar (USD)</option>
                                 <option value="EUR">Euro (EUR)</option>
                                 <option value="GBP">British Pound Sterling (GBP)</option>
@@ -130,13 +130,13 @@
                                         <span class="text-red-500"><strong>*</strong></span></label>
                                     <input type="text" id="designation" name="designation[]"
                                         value="{{ $item['designation'] }}" autofocus
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                                 </div>
                                 <div class="mb-4">
                                     <label for="notes"
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Notes </label>
                                     <textarea id="notes" name="notes[]"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('notes') border-red-500 @enderror">{{ $item['notes'] }}</textarea>
+                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('notes') border-red-500 @enderror">{{ $item['notes'] }}</textarea>
                                 </div>
                             </div>
                             <div>
@@ -146,7 +146,7 @@
                                             class="text-red-500"><strong>*</strong></span></label>
                                     <input type="number" id="qty" name="qty[]" value="{{ $item['qty'] }}"
                                         autofocus
-                                        class="qty bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                        class="qty bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                                 </div>
                             </div>
                             <div>
@@ -156,7 +156,7 @@
                                             class="text-red-500"><strong>*</strong></span></label>
                                     <input type="number" step="0.01" min="0.01" id="puht" name="puht[]"
                                         value="{{ number_format($item['puht'], 3) }}" autofocus
-                                        class="puht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                        class="puht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                                 </div>
                             </div>
                             <div>
@@ -166,7 +166,7 @@
                                             class="text-red-500"><strong>*</strong></span></label>
                                     <input type="number" step="0.01" min="0.01" id="total_ht"
                                         name="total_ht[]" value="{{ number_format($item['total_ht'], 3) }}" autofocus
-                                        class="total_ht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                        class="total_ht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
                     <div class="text-end mt-2">
                         <button type="button"
-                            class="bg-blue-400 hover:bg-blue-500 text-xs text-white py-1 px-5 rounded-lg focus:outline-none inline-flex items-center"
+                            class="bg-blue-400 hover:bg-blue-400 text-xs text-white py-1 px-5 rounded-lg focus:outline-none inline-flex items-center"
                             id="add-row">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -197,7 +197,7 @@
                     </div>
                     <div class="flex items-end justify-end">
                         <button type="submit"
-                            class="background-accent-light-custom hover:bg-orange-500 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Update</button>
+                            class="background-accent-light-custom hover:bg-blue-400 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Update</button>
                     </div>
                 </form>
             </div>
@@ -234,12 +234,12 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Designation
                                     (optional)</label>
                                 <input type="text" id="designation" name="designation[]" value=""
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                             </div>
                             <div class="mb-4">
                                     <label for="notes"
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Notes </label>
-                                    <textarea id="notes" name="notes[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('notes') border-red-500 @enderror"></textarea>
+                                    <textarea id="notes" name="notes[]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('notes') border-red-500 @enderror"></textarea>
                                 </div>
                         </div>
                         <div>
@@ -248,7 +248,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Qty
                                     (optional)</label>
                                 <input type="number" id="qty" name="qty[]" value=""
-                                    class="qty bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                    class="qty bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                             </div>
                         </div>
                         <div>
@@ -258,7 +258,7 @@
                                     (optional)</label>
                                 <input type="number" step="0.01" min="0.01" id="puht" name="puht[]"
                                     value=""
-                                    class="puht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                    class="puht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                             </div>
                         </div>
                         <div>
@@ -268,7 +268,7 @@
                                     (optional)</label>
                                 <input type="number" step="0.01" min="0.01" id="total_ht" name="total_ht[]"
                                     value="" readonly
-                                    class="total_ht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 @error('name') border-red-500 @enderror">
+                                    class="total_ht bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-400 focus:border-blue-400 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-400 dark:focus:border-blue-400 @error('name') border-red-500 @enderror">
                             </div>
 
                         </div>

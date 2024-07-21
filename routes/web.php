@@ -41,7 +41,8 @@ Route::post('mobile-verify', [RegisterController::class, 'verify'])->name('mobil
 Route::middleware('auth')->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::prefix('admin')->middleware('admin')->group(function () {
-
+        Route::get('profile', [ProfileController::class, 'index'])->name('admin.profile');
+        Route::post('update', [ProfileController::class, 'update'])->name('admin.profile.update');
 
         Route::prefix('users')->group(function () {
             Route::get('add', [UserController::class, 'create'])->name('admin.users.add');
@@ -66,8 +67,8 @@ Route::middleware('auth')->group(function () {
         });
     });
     Route::prefix('user')->middleware('user')->group(function () {
-        Route::get('profile', [ProfileController::class, 'index'])->name('profile');
-        Route::post('update', [ProfileController::class, 'update'])->name('profile.update');
+        Route::get('profile', [ProfileController::class, 'index'])->name('user.profile');
+        Route::post('update', [ProfileController::class, 'update'])->name('user.profile.update');
     });
     Route::get('sign-out', [AuthContoller::class, 'logout'])->name('singout');
 });

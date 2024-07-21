@@ -20,7 +20,7 @@
                     <div class="mb-4">
                         <label for="otp" class="block text-sm text-white mb-2">OTP</label>
                         <input type="text" id="otp" name="otp" value="{{ old('otp') }}" required autofocus
-                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 text-white focus:border-blue-500 @error('otp') border-red-500 @enderror"
+                            class="w-full h-10 p-3 rounded-lg text-sm border bg-slate-600 text-white focus:border-blue-400 @error('otp') border-red-500 @enderror"
                             placeholder="123 456">
                     </div>
                     <div class="flex items-center justify-between mb-4">
@@ -34,7 +34,7 @@
 
                     <div class="flex items-end justify-end">
                         <button type="submit"
-                            class="background-accent-light-custom hover:bg-orange-500 w-full h-10 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Verify</button>
+                            class="background-accent-light-custom hover:bg-blue-400 w-full h-10 text-sm text-white py-2 px-4 rounded-lg focus:outline-none">Verify</button>
                     </div>
                 </form>
                     <div class="mt-4 text-center">
